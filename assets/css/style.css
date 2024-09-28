@@ -1,0 +1,79 @@
+/* ========= coman======= */
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%;
+}
+
+:root {
+  --back-color: #fff;
+}
+/* ================== heading ==============*/
+#heading {
+  display: flex;
+  background-color: #000;
+  align-items: center;
+  height: 46px;
+}
+.heading-left > ul {
+  display: flex;
+}
+.heading-left > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14.5px 24px;
+  color: var(--back-color);
+  font-size: 1.5rem;
+}
+
+.heading-left a:hover {
+  background: #ccc;
+  color: #000;
+}
+.heading-left a:hover .fa-caret-down {
+  color: #000;
+}
+#heading .heading-right {
+  margin-left: auto;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.heading-right .fa-magnifying-glass {
+  padding: 16px 24px;
+}
+
+.fa-caret-down {
+  color: #fff;
+  font-size: 1.2rem;
+}
+#heading li.active {
+  position: relative;
+}
+
+#heading li.active ul {
+  position: absolute;
+  background-color: #ccc;
+  top: 30.5px;
+  /* display: none; */
+}
+#heading li.active ul {
+  display: none;
+}
+#heading li.active li {
+  min-width: 160px;
+}
+.heading-left li.active li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 11px 16px;
+  display: block;
+}
+
+#heading li.active:hover ul {
+  background-color: #fff;
+  display: block;
+  box-shadow: 0 0 10px #aaa;
+}
+.heading-right .fa-magnifying-glass:hover {
+  background-color: red;
+}
