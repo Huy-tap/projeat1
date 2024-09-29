@@ -7,12 +7,23 @@ html {
 :root {
   --back-color: #fff;
 }
+
+.main-content {
+  padding: 64px 16px;
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* ================== heading ==============*/
 #heading {
   display: flex;
   background-color: #000;
   align-items: center;
   height: 46px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
 }
 .heading-left > ul {
   display: flex;
@@ -76,4 +87,170 @@ html {
 }
 .heading-right .fa-magnifying-glass:hover {
   background-color: red;
+}
+
+/* ==========slide========== */
+
+#slide .thumb {
+  width: 100%;
+  object-fit: cover;
+}
+
+#slide .slide-img {
+  position: relative;
+}
+#slide .slide-content {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 32px 0px;
+}
+.slide-content .hear {
+  font-size: 2.4rem;
+}
+.slide-content .desc-lv {
+  font-size: 1.5rem;
+  margin: 25px 0;
+}
+
+/* =========== the banh ========= */
+.the-banh .banh-top {
+  text-align: center;
+}
+
+.the-banh .banh-top .title {
+  letter-spacing: 4px;
+  font-size: 3rem;
+}
+
+.the-banh .banh-top .decs {
+  font-size: 1.5rem;
+  margin-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+}
+.the-banh .banh-top .lv {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 15px 0;
+}
+.banh-name .name-list {
+  display: flex;
+  justify-content: space-between;
+}
+.the-banh .banh-name {
+  padding: 32px 0;
+}
+.banh-name .name-list .name-item {
+  text-align: center;
+}
+.banh-name .name-list .name {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+.banh-name .name-item img {
+  width: 60%;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+/* ===============TOUR-DATES============ */
+.tour-dates {
+  background-color: #000;
+}
+.tour-dates .head-tour {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  margin: 10px 0;
+}
+.tour-dates .desc-tour {
+  font-style: italic;
+  opacity: 0.6;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 25px 0;
+}
+
+.tour-top {
+  background-color: #fff;
+}
+
+.tour-top .date {
+  color: #757575;
+  padding: 16px 8px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.5rem;
+}
+
+.tour-top .date .sold-out {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  font-size: 1.5rem;
+  margin-left: 16px;
+}
+.tour-top .date .only {
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  font-size: 1.5rem;
+  margin-top: -10px;
+  margin-right: 16px;
+  float: right;
+}
+
+.tour-dates .tour-list {
+  padding: 32px 0;
+  display: flex;
+  gap: 16px;
+}
+.tour-list img {
+  width: 100%;
+  display: block;
+}
+.tour-list img:hover {
+  opacity: 0.8;
+}
+
+.tour-list .tour-item {
+  margin-bottom: 16px;
+}
+.tour-list .tour-content {
+  background-color: white;
+  padding: 0 16px;
+}
+.tour-content .place {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+  padding-top: 15px;
+}
+.tour-content .date {
+  font-size: 1.5rem;
+  opacity: 0.6;
+  margin-top: 25px;
+}
+.tour-content .place-content {
+  font-size: 1.5rem;
+  margin: 25px 0;
+}
+.tour-content .bth {
+  text-decoration: none;
+  color: white;
+  background-color: #000;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.tour-content .bth:hover {
+  background-color: #ccc;
+  color: black;
 }
