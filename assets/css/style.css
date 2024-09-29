@@ -254,3 +254,42 @@ html {
   background-color: #ccc;
   color: black;
 }
+/* ============ contact========= */
+.contact .contact-title {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.contact .desc {
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
+  margin: 15px 0;
+}
+.contact .contact-list {
+  width: 50%;
+}
+.contact-list .contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contact .content-contact {
+  padding: 32px 0;
+  display: flex;
+}
+
+.content-contact .contact-buttom .input {
+  padding: 8px;
+  /* display: block; */
+  /* border-bottom: 1px solid #ccc; */
+  width: 100%;
+}
+.content-contact .contact-buttom .input-lv {
+  width: 100%;
+  padding: 8px;
+}
