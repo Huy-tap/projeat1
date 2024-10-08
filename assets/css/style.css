@@ -13,6 +13,7 @@ html {
   max-width: 768px;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 /* ================== heading ==============*/
@@ -283,13 +284,32 @@ html {
   display: flex;
 }
 
-.content-contact .contact-buttom .input {
+.content-contact .list-input {
+  display: flex;
+  gap: 8px;
+}
+.content-contact .list-input .input {
   padding: 8px;
-  /* display: block; */
   /* border-bottom: 1px solid #ccc; */
-  width: 100%;
+  /* width: 100%; */
 }
 .content-contact .contact-buttom .input-lv {
-  width: 100%;
+  width: 95%;
+  margin-top: 8px;
   padding: 8px;
+  display: inline;
+}
+.content-contact .contact-buttom .btn-send {
+  float: right;
+  margin: 16px 0;
+  padding: 10px 16px;
+  font-size: 1.5rem;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.content-contact .contact-buttom .btn-send:hover {
+  background-color: #ccc;
+  color: #000;
 }
