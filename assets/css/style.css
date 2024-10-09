@@ -1,9 +1,12 @@
 /* ========= coman======= */
+
+* {
+  box-sizing: border-box;
+}
 html {
   font-family: "Lato", sans-serif;
   font-size: 62.5%;
 }
-
 :root {
   --back-color: #fff;
 }
@@ -199,9 +202,9 @@ html {
   border-radius: 50%;
   background-color: black;
   color: white;
-  padding: 8px;
+  padding: 5px 8px;
   font-size: 1.5rem;
-  margin-top: -10px;
+  margin-top: -5px;
   margin-right: 16px;
   float: right;
 }
@@ -294,7 +297,7 @@ html {
   /* width: 100%; */
 }
 .content-contact .contact-buttom .input-lv {
-  width: 95%;
+  width: 100%;
   margin-top: 8px;
   padding: 8px;
   display: inline;
@@ -312,4 +315,25 @@ html {
 .content-contact .contact-buttom .btn-send:hover {
   background-color: #ccc;
   color: #000;
+}
+/* =============map========== */
+
+.maps {
+  width: 100%;
+  filter: grayscale(50%);
+  object-fit: contain;
+}
+/* ============= footer=========== */
+
+footer {
+  padding: 64px 16px;
+  text-align: center;
+  opacity: 0.6;
+}
+footer .icon {
+  font-size: 2.4rem;
+}
+footer .footer__desc {
+  font-size: 1.5rem;
+  margin-top: 15px;
 }
